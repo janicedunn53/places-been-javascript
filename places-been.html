@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places You've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places You've Been</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a New Place:</h2>
+
+          <form id="new-place">
+            <div class="form-group">
+              <label for="new-place-name">Name</label>
+              <input type="text" class="form-control" id="new-place-name">
+            </div>
+            <div class="form-group">
+              <label for="new-place-location">Location</label>
+              <input type="text" class="form-control" id="new-place-location">
+            </div>
+            <div class="form-group">
+              <h5>Notes</h5>
+              <textarea id="new-place-notes" name="notes" rows="8" cols="40" form="new-place"></textarea>
+            </div>
+
+            <button class="btn btn-success" type="submit">Add</button>
+          </form>
+
+          <h2>Places:</h2>
+          <ul id="places">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+            <p>
+              Name: <span class="place-name"></span>
+            </p>
+            <p>
+              Location: <span class="place-location"></span>
+            </p>
+            <p>
+              Notes: <span class="place-notes"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
